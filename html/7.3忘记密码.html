@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Document</title>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<!-- plugin css -->
+  	<link rel="stylesheet" href="../css/idangerous.swiper.css">
+  	<!-- style css -->
+	<link rel="stylesheet" type="text/css" href="../css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../css/public.css" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../css/validator.css">
+	<link rel="stylesheet" type="text/css" href="../font/iconfont/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="../font/font-awesome/css/font-awesome.min.css">
+
+	<script type="text/javascript" src='../js/lib/jquery-1.10.1.min.js'></script>
+	<script type="text/javascript" src='../js/lib/idangerous.swiper.min.js'></script>
+	<script type="text/javascript" src='../js/lib/bootstrapValidator.min.js'></script>
+</head>
+<body>
+	<!-- ==================== head ==================== -->
+	<div class='page_head clx'>
+		<div class='height_full head_logo_area fl height_middle'>
+			<img class='inline_block vertical_middle' src="../img/icon_07.png">
+		</div>
+		<div class='height_full head_login_area fr height_middle'>
+			<a class='login_content active inline_block vertical_middle'>
+				<i class='iconfont icon-yonghu'></i>
+			</a>
+		</div>
+		<div class='height_full lang_area fr height_middle'>
+			<a class='inline_block vertical_middle font_14'>EN</a>
+		</div>
+		<div class='height_full head_title_list fr font_0'>
+			<a class='inline_block head_title_item height_middle height_full active'>
+				<p class='inline_block vertical_middle align_center font_14'>网站首页</p>
+				<div class='cut_line transition_3'></div>
+			</a>
+			<a class='inline_block head_title_item height_middle height_full'>
+				<p class='inline_block vertical_middle align_center font_14'>在线学习</p>
+				<div class='cut_line transition_3'></div>
+			</a>
+			<a class='inline_block head_title_item height_middle height_full'>
+				<p class='inline_block vertical_middle align_center font_14'>在线测试</p>
+				<div class='cut_line transition_3'></div>
+			</a>
+			<a class='inline_block head_title_item height_middle height_full'>
+				<p class='inline_block vertical_middle align_center font_14'>购买课程</p>
+				<div class='cut_line transition_3'></div>
+			</a>
+			<a class='inline_block head_title_item height_middle height_full'>
+				<p class='inline_block vertical_middle align_center font_14'>关于SAT</p>
+				<div class='cut_line transition_3'></div>
+			</a>
+		</div>
+	</div>
+	<!-- ==================== body ==================== -->
+	<div class='page_body'>
+		<div class='line_height_0 margin_bottom_20'>
+			<img class='width_full' src="../img/icon_12.png">
+		</div>
+	  	<!-- 内容 -->
+		<div class='content_container'>
+			<div class='content_head_line'>
+				<div class='name'>忘记密码</div>
+				<p class='fr margin_top_10 margin_right_15'>已有账号，<a class='hover_underline' style='color: #3499CF;'>立即登录</a>。</p>
+			</div>
+			<form class='form-horizontal margin_top_30' id='my_form'>
+				<div class='form-group'>
+					<label class='col-xs-5 control-label'>请输入您的账号</label>
+					<div class='col-xs-3'>
+						<input type='text' class='form-control' name='firstName' placeholder='firstname'>
+					</div>
+				</div>
+				<div class='form-group'>
+					<label class='col-xs-5 control-label'>验证码</label>
+					<div class='col-xs-2'>
+						<input type='text' class='form-control' name='firstName' placeholder='firstname'>
+					</div>
+					<div class='zf_col_1 padding_right_15'>
+						<img class='width_full' src="../img/check_code.png">
+					</div>
+				</div>
+				<div class='align_center margin_top_30'>
+					<button class='btn btn_blue btn9'>下一步</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- ==================== footer ==================== -->
+	<div class='page_footer'>
+		<div class='line line_1'>
+			<a>关于我们</a>
+			<a>价格体系</a>
+			<a>隐私条例</a>
+			<a>联系我们</a>
+			<a>使用帮助</a>
+			<a>版权声明</a>
+		</div>
+		<div class='line line_2'>©2015 SATICOOL 版权所有 沪ICP备15031247号-1</div>
+	</div>
+</body>
+<script type="text/javascript">
+	$('#my_form').bootstrapValidator({
+        // live: 'disabled',
+        message: 'This value is not valid',
+        fields: {
+            firstName: {
+                validators: {
+                    notEmpty: {
+                        message: 'The first name is required and cannot be empty'
+                    }
+                }
+            }
+        }
+    });
+</script>
+</html>
