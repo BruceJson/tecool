@@ -1,5 +1,6 @@
 html,body{height: 100%;overflow: auto;position: relative;}
 .body{font-size: 14px;color: #3C3C3C;}
+a,a:link,a:visited,a:active,a:focus{color: #3C3C3C;}
 /*page head*/
 .page_head{
 	height: 70px;
